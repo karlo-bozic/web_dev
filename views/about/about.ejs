@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet"href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="stylesheets/stylesheet.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+        <link rel="icon" href="images/e082ab48525a4777b19a68eb18d6bd6f - Copy.png">
+
+        <title>Moda - About</title>
+
+    </head>
+
+    <body>
+        <!-- naavigation bar -->
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand mr-4 mb-2" href="/">
+                <img src="images/e082ab48525a4777b19a68eb18d6bd6f.png" alt="Moda Logo">
+            </a>
+            <!-- button that appears when window width get smaller -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- navigation bar content -->
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ">
+                    <li class="nav-item ml-4 pl-4 pr-4">
+                        <a class="nav-link" href="/">Home</a>
+                    </li>
+                    <li class="nav-item ml-4 pl-4 pr-4">
+                        <a class="nav-link" href="/products">Products</a>
+                    </li>
+                    <li class="nav-item ml-4 pl-4 pr-4">
+                        <a class="nav-link" href="/about">About</a>
+                    </li>
+                    <!-- navigation bar content that dropdowns for more options -->
+                    <li class="nav-item dropdown ml-4 pl-4 pr-4">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            More
+                        </a>
+                        <div class="dropdown-menu mb-4" aria-labelledby="navbarDropdown">
+                            <!-- changes the conent inside the dropdown depending on whether you are loggged in or not -->
+                            <% if (myVar == 0) { %>
+                                <a class="dropdown-item" href="/register">Register      <i class="fas fa-user-plus ml-3"></i></a></a>
+                                <a class="dropdown-item" href="/login">Login     <i class="fas fa-sign-in-alt ml-3"></i></a></a>
+                            <% } %>
+                            <% if (myVar == 1) { %>
+                                <a class="dropdown-item" href="/profile">Profile     <i class="fas fa-user-circle ml-3"></i></a></a>
+                                <a class="dropdown-item" href="/checkout">Checkout       <i class="fas fa-shopping-basket ml-3"></i></a></a>
+                                <a class="dropdown-item" href="/logout">Logout       <i class="fas fa-sign-out-alt ml-3"></i></a></a>
+                            <% } %>
+                        </div>
+                      </li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- container contains heading bg image -->
+        <div class="container-fluid px-0">
+            <div class="row mx-0">
+                <div class="col-12 px-0 ">
+                    <img src="images/zadar-gf6950ff70_1920.jpg" class="img-fluid w-100">
+                    <div class="center text-white">
+                        <b><h2 data-toggle="animation" data-animation-start="onScroll" data-animation-onScroll="repeat" data-animation="slide-in-left" class="">Origins</h2></b>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- contains the info text -->
+        <div class="container px-3 pb-5" id="origin-text">
+           <b><p class="text-default text-center" data-mdb-animation-start="onHover">
+                In comparison to some of the other luxury fashion houses, Moda is a relative newcomer to the scene. Started in 1985, the brand made a huge debut on the fashion scene and has not lost any steam. With their passion for infusing Italian culture in all of their designs, the Moda history includes a unique style that resonates with fashion lovers all over the globe.
+                <br><br>Domenico Dolce was born near Palermo, Sicily, to a family that owned a clothing business. Domenico worked in the family business since childhood, learning about fashion and how to make customers happy. Stefano Gabbana was born at the other end of Italy, near Milan. His first love was art, and he studied graphics initially. Later he turned to his new passion, which was fashion. They began collaborating on ideas and creating designs together. After a short time, the Moda label was launched. The label had their first runway show in Milan in 1985.
+            </p></b>
+        </div>
+        <!-- google maps of headquarter -->
+        <div class="container-fluid mt-5 mb-5 text-center">
+            <h4>Want To Visit Us:</h4>
+            <iframe class="pb-4"src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2798.0957989873264!2d9.206478616110747!3d45.467874079100895!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4786c697d0e4be11%3A0xe17965141011f3e9!2sCorso%20Concordia%2C%2020129%20Milano%20MI%2C%20Italy!5e0!3m2!1sen!2sie!4v1638216627378!5m2!1sen!2sie" width="100%" height="600" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+        <!-- div contains the ways to contact company and other details -->
+        <div class="container-fluid mt-5 mb-5">
+            <div class="row d-flex justify-content-center">
+                <div class="col-sm text-center p-4 border-right border-left border-dark" >
+                    <u><h5>Socials</h5></u>
+                    <div class="mt-4">
+                        <p>Instagram      <i class="fab fa-instagram"></i></p>
+                        <p>Facebook       <i class="fab fa-facebook-square"></i></p>
+                        <p>Twitter      <i class="fab fa-twitter"></i></p>
+                    </div>
+                </div>
+                <div class="col-sm text-center p-4">
+                    <u><h5>Get to Us</h5></u>
+                    <div class="mt-4">
+                        <p><i class="fas fa-map-marker"></i>      Corso Concordia, 720129 Milano, Italy</p>
+                        <p><i class="fas fa-mobile-alt"></i>      087 4223 282</p>
+                        <p><i class="fas fa-at"></i>      modafash@moda.it</p>
+                    </div>
+
+                </div>
+              </div>
+            </div>
+        </div>
+
+        <!-- footer -->
+        <footer class="text-center text-lg-start">
+            <div class="text-center p-3">
+                © 2021 Copyright:
+                <a class="text-dark" href="/">Moda.ie</a>
+            </div>
+        </footer>
+    </body>
+</html>

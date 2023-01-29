@@ -1,0 +1,154 @@
+body{
+    font-family: 'Merriweather', serif;
+    /*background-color: rgb(255, 248, 217);*/
+}
+
+.navbar{
+    background-color: rgb(255, 217, 0);
+}
+.nav-item:hover{
+    background-color: rgb(231, 189, 49);
+    border-radius: 5px;
+}
+#user-auth{
+    float: right;
+}
+.dropdown-menu{
+    background-color: rgb(231, 189, 49);
+    border-radius: 5px;
+}
+.dropdown-item:hover{
+    background-color: rgb(255, 217, 0);
+    border-radius: 5px;
+}
+footer{
+    background-color: rgba(255, 217, 0, 0.514);
+}
+
+
+
+/*home page*/
+.d-block{
+    height: 950px;
+}
+.center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+h3{
+    font-size: 2cm;
+}
+
+
+
+/*login page*/
+bg-img{    
+    width: 50%;
+    height: 950px;
+}
+
+
+
+
+
+
+/* product -karlo*/
+.sp-quantity{
+    width:124px;
+    height:42px;
+    font-family: "ProximaNova Bold", Helvetica, Arial;
+    
+  }
+  .sp-minus{
+     width:40px;
+    height:40px;
+    border:1px solid #e1e1e1;
+    float:right;
+     text-align:center;
+  }
+  .sp-input{
+     width:40px;
+    height:40px;
+    border:1px solid #e1e1e1;
+    border-left:0px solid black;
+    float:right;
+  }
+  .sp-plus{
+     width:40px;
+    height:40px;
+     border:1px solid #e1e1e1;
+    border-left:0px solid #e1e1e1;
+    float:right;
+     text-align:center;
+  
+  }
+  .sp-input input{
+    width:30px;
+    height:34px;
+    text-align:center;
+  font-family: "ProximaNova Bold", Helvetica, Arial;
+    border: none;
+  }
+  .sp-input input:focus{
+      border:1px solid #e1e1e1;
+    border: none;
+  }
+  .sp-minus a, .sp-plus a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding-top: 5px;
+    
+  }
+
+
+
+/*About Page*/
+#origin{
+    border-radius: 100px;
+    width:80%;
+    max-width:400px
+}
+h2{
+    font-size: 3cm;
+}
+#origin-text p{
+    font-size: 0.5;
+}
+
+
+
+
+/* Products Page */
+#product_img{
+    width: 200px;
+    height: 200px;
+    /* border-radius: 30px; */
+}
+td{
+    height: 100px;
+    text-align: center; 
+}
+#td{
+    margin-top: 95px;
+    margin-bottom: 90px;
+}
+#navbar2{
+    background-color: rgb(231, 189, 49);
+}
+#navbar2:hover{
+    background-color: rgba(231, 189, 49, 0.835);
+}
+#filtermain{
+    /* margin-left: 50%; */
+    margin-right: 50%;
+}
+#volume{
+    height: 1cm;
+}
+.list-group-item{
+    background-color: rgb(231, 189, 49);
+    border: none;
+}
